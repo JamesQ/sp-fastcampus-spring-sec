@@ -8,6 +8,7 @@ public class MultiChainProxyApplication {
 
 
     public static void main(String[] args) {
+
         SpringApplication.run(MultiChainProxyApplication.class, args);
     }
 

@@ -13,22 +13,22 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
+
 @RestController
 @RequestMapping("/api/teacher")
-public class ApiTeacherController {
+public class MobTeacherController {
 
     private final StudentManager studentManager;
 
-    public ApiTeacherController(StudentManager studentManager) {
-
+    public MobTeacherController(StudentManager studentManager) {
         this.studentManager = studentManager;
     }
 
     @PreAuthorize("hasAnyAuthority('ROLE_TEACHER')")
     @GetMapping("/students")
-    public List<Student> studentList(@AuthenticationPrincipal Teacher teacher) {
-        List<Student> students = studentManager.myStudentList(teacher.getId());
-        return students;
+    public List<Student> main(@AuthenticationPrincipal Teacher teacher){
+        return studentManager.myStudents(teacher.getId());
     }
+
 
 }

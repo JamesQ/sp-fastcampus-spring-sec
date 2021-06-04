@@ -15,13 +15,13 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 
 @Order(1)
 @Configuration
-public class MobileSecurityConfig extends WebSecurityConfigurerAdapter {
+public class MobSecurityConfig extends WebSecurityConfigurerAdapter {
 
 
     private final StudentManager studentManager;
     private final TeacherManager teacherManager;
 
-    public MobileSecurityConfig(StudentManager studentManager, TeacherManager teacherManager) {
+    public MobSecurityConfig(StudentManager studentManager, TeacherManager teacherManager) {
         this.studentManager = studentManager;
         this.teacherManager = teacherManager;
     }
@@ -35,7 +35,6 @@ public class MobileSecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-
         http
                 .antMatcher("/api/**")
                 .csrf().disable()
@@ -45,5 +44,4 @@ public class MobileSecurityConfig extends WebSecurityConfigurerAdapter {
                 .httpBasic()
                 ;
     }
-
 }

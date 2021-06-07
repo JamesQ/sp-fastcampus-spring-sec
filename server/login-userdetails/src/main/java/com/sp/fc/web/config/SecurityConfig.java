@@ -47,29 +47,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         return roleHierarchy;
     }
 
-    @Bean
-    public ServletListenerRegistrationBean<HttpSessionEventPublisher> httpSessionEventPublisher() {
-        return new ServletListenerRegistrationBean<HttpSessionEventPublisher>(new HttpSessionEventPublisher(){
-            @Override
-            public void sessionCreated(HttpSessionEvent event) {
-                super.sessionCreated(event);
-                System.out.printf("===>> [%s] 세션 생성됨 %s \n", LocalDateTime.now(), event.getSession().getId());
-            }
-
-            @Override
-            public void sessionDestroyed(HttpSessionEvent event) {
-                super.sessionDestroyed(event);
-                System.out.printf("===>> [%s] 세션 만료됨 %s \n", LocalDateTime.now(), event.getSession().getId());
-            }
-
-            @Override
-            public void sessionIdChanged(HttpSessionEvent event, String oldSessionId) {
-                super.sessionIdChanged(event, oldSessionId);
-                System.out.printf("===>> [%s] 세션 아이디 변경 %s:%s \n", LocalDateTime.now(), oldSessionId, event.getSession().getId());
-            }
-        });
-    }
-    
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http

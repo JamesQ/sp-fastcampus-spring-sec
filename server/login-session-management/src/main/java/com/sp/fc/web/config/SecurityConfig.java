@@ -12,6 +12,8 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.builders.WebSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.core.session.SessionRegistry;
+import org.springframework.security.core.session.SessionRegistryImpl;
 import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.rememberme.JdbcTokenRepositoryImpl;
@@ -76,6 +78,12 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     }
 
     @Bean
+    SessionRegistry sessionRegistry() {
+        SessionRegistryImpl registry = new SessionRegistryImpl();
+        return registry;
+    }
+
+    @Bean
     PersistentTokenRepository tokenRepository(){
         JdbcTokenRepositoryImpl repository = new JdbcTokenRepositoryImpl();
         repository.setDataSource(dataSource);
@@ -94,6 +102,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                         spUserService,
                         tokenRepository()
                         );
+        service.setAlwaysRemember(true); // for testing // in case of custom made
         return service;
     }
 
@@ -117,7 +126,13 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                         error.accessDeniedPage("/access-denied")
                 )
                 .rememberMe(r->r
+                        .alwaysRemember(true) // for testing
                         .rememberMeServices(rememberMeServices())
+                )
+                .sessionManagement(s -> s
+                        .maximumSessions(1)
+                        .maxSessionsPreventsLogin(false)
+                        .expiredUrl("/session-expired")
                 )
                 ;
     }
@@ -125,6 +140,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     public void configure(WebSecurity web) throws Exception {
         web.ignoring()
+                .antMatchers("/sessions", "/session/expire", "/session-expired")
                 .requestMatchers(
                         PathRequest.toStaticResources().atCommonLocations(),
                         PathRequest.toH2Console()

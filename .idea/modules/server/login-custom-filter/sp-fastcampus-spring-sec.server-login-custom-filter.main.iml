@@ -13,9 +13,6 @@
   <component name="NewModuleRootManager">
     <output url="file://$MODULE_DIR$/../../../../server/login-custom-filter/build/classes/java/main" />
     <exclude-output />
-    <content url="file://$MODULE_DIR$/../../../../server/login-custom-filter/build/generated/sources/annotationProcessor/java/main">
-      <sourceFolder url="file://$MODULE_DIR$/../../../../server/login-custom-filter/build/generated/sources/annotationProcessor/java/main" isTestSource="false" generated="true" />
-    </content>
     <content url="file://$MODULE_DIR$/../../../../server/login-custom-filter/src/main">
       <sourceFolder url="file://$MODULE_DIR$/../../../../server/login-custom-filter/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../../../../server/login-custom-filter/src/main/resources" type="java-resource" />

@@ -41,12 +41,12 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     }
 
     @Bean
-    PasswordEncoder passwordEncoder(){
+    PasswordEncoder passwordEncoder() {
         return NoOpPasswordEncoder.getInstance();
     }
 
     @Bean
-    RoleHierarchy roleHierarchy(){
+    RoleHierarchy roleHierarchy() {
         RoleHierarchyImpl roleHierarchy = new RoleHierarchyImpl();
         roleHierarchy.setHierarchy("ROLE_ADMIN > ROLE_USER");
         return roleHierarchy;
@@ -54,7 +54,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Bean
     public ServletListenerRegistrationBean<HttpSessionEventPublisher> httpSessionEventPublisher() {
-        return new ServletListenerRegistrationBean<HttpSessionEventPublisher>(new HttpSessionEventPublisher(){
+        return new ServletListenerRegistrationBean<HttpSessionEventPublisher>(new HttpSessionEventPublisher() {
             @Override
             public void sessionCreated(HttpSessionEvent event) {
                 super.sessionCreated(event);
@@ -81,7 +81,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         repository.setDataSource(dataSource);
         try {
             repository.removeUserTokens("1");
-        }catch(Exception ex) {
+        } catch (Exception ex) {
             repository.setCreateTableOnStartup(true);
         }
         return repository;
@@ -93,7 +93,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 new PersistentTokenBasedRememberMeServices("hello",
                         spUserService,
                         tokenRepository()
-                        );
+                );
 
         return service;
     }
@@ -101,24 +101,24 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
-                .authorizeRequests(request->
-                    request.antMatchers("/").permitAll()
-                            .anyRequest().authenticated()
+                .authorizeRequests(request ->
+                        request.antMatchers("/").permitAll()
+                                .anyRequest().authenticated()
                 )
-                .formLogin(login->
+                .formLogin(login ->
                         login.loginPage("/login")
-                        .loginProcessingUrl("/loginprocess")
-                        .permitAll()
-                        .defaultSuccessUrl("/", false)
-                        .failureUrl("/login-error")
+                                .loginProcessingUrl("/loginprocess")
+                                .permitAll()
+                                .defaultSuccessUrl("/", false)
+                                .failureUrl("/login-error")
                 )
-                .logout(logout->
+                .logout(logout ->
                         logout.logoutSuccessUrl("/"))
-                .exceptionHandling(error->
+                .exceptionHandling(error ->
                         error.accessDeniedPage("/access-denied")
                 )
-                .rememberMe(r->r.rememberMeServices(rememberMeServices()))
-                ;
+                .rememberMe(r -> r.rememberMeServices(rememberMeServices()))
+        ;
     }
 
     @Override

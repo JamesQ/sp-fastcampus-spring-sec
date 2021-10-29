@@ -4,31 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7382f76-43a3-48d5-aafb-d1b751e05f85" name="Default Changelist" comment="add 401-login-custom-filter. JamesQ">
-      <change afterPath="$PROJECT_DIR$/server/login-custom-filter/src/main/java/com/sp/fc/web/config/CustomLoginFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/login-custom-filter/src/main/java/com/sp/fc/web/student/StudentAuthenticationToken.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/login-custom-filter/src/main/java/com/sp/fc/web/student/StudentManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/login-custom-filter/src/main/java/com/sp/fc/web/teacher/Teacher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/login-custom-filter/src/main/java/com/sp/fc/web/teacher/TeacherAuthenticationToken.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/login-custom-filter/src/main/java/com/sp/fc/web/teacher/TeacherManager.java" afterDir="false" />
+    <list default="true" id="06422c50-b10b-4e5e-81f5-460f938646c3" name="Changes" comment="add 401-login-custom-filter. JamesQ">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021-06-03__1_15__Default_Changelist_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021-06-03__1_22__Default_Changelist_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021-06-03_오후_1_15_[Default_Changelist]/md5-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021-06-03_오후_1_15_[Default_Changelist]/sha1-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021-06-03_오후_1_15_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021-06-03_오후_1_22_[Default_Changelist]/md5-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021-06-03_오후_1_22_[Default_Changelist]/sha1-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021-06-03_오후_1_22_[Default_Changelist]/shelved.patch" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/build/classes/java/main/com/sp/fc/web/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/login-custom-filter/build/classes/java/main/com/sp/fc/web/config/SecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/build/classes/java/main/com/sp/fc/web/controller/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/login-custom-filter/build/classes/java/main/com/sp/fc/web/controller/HomeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/build/resources/main/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/login-custom-filter/build/resources/main/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/build/resources/main/templates/loginForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/login-custom-filter/build/resources/main/templates/loginForm.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/login-custom-filter/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/server/login-custom-filter/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/src/main/java/com/sp/fc/web/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/login-custom-filter/src/main/java/com/sp/fc/web/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/src/main/java/com/sp/fc/web/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/login-custom-filter/src/main/java/com/sp/fc/web/controller/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/src/main/java/com/sp/fc/web/student/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/login-custom-filter/src/main/java/com/sp/fc/web/student/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/login-custom-filter/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/src/main/resources/templates/loginForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/login-custom-filter/src/main/resources/templates/loginForm.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +46,12 @@
         </task>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="sp-fastcampus-spring-sec" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -100,7 +103,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/server/login-custom-filter" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/server/login-basic/src/main/java/com/sp/fc/web/config/SecurityConfig.java" />
   </component>
@@ -108,6 +111,13 @@
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.sp.fc.web.teacher" />
     </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
   </component>
   <component name="RunManager" selected="Spring Boot.CustomLoginApp">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
@@ -153,12 +163,13 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d7382f76-43a3-48d5-aafb-d1b751e05f85" name="Default Changelist" comment="" />
+      <changelist id="06422c50-b10b-4e5e-81f5-460f938646c3" name="Changes" comment="add 401-login-custom-filter. JamesQ" />
       <created>1622685861711</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1622685861711</updated>
       <workItem from="1622685864114" duration="13811000" />
+      <workItem from="1635464931474" duration="594000" />
     </task>
     <task id="LOCAL-00001" summary="Merge branch '3-1-폼로그인' into 3-2-BasicLogin">
       <created>1622694966201</created>
@@ -199,23 +210,12 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="origin/4-1-login-custom-filter" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Merge branch '3-1-폼로그인' into 3-2-BasicLogin" />
@@ -231,6 +231,36 @@
           <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.4.2/77fbeed16e50ba31d13ec1434bb613dfa1badd61/spring-security-web-5.4.2-sources.jar!/org/springframework/security/web/authentication/UsernamePasswordAuthenticationFilter.java</url>
           <line>84</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/server/login-custom-filter/src/main/java/com/sp/fc/web/config/CustomLoginFilter.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/server/login-custom-filter/src/main/java/com/sp/fc/web/config/CustomLoginFilter.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/server/login-custom-filter/src/main/java/com/sp/fc/web/student/StudentManager.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/server/login-custom-filter/src/main/java/com/sp/fc/web/config/CustomLoginFilter.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/server/login-custom-filter/src/main/java/com/sp/fc/web/config/CustomLoginFilter.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/server/login-custom-filter/src/main/java/com/sp/fc/web/student/StudentManager.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
